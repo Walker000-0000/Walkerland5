@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <div id="paper">
+
+        <div id="header">
+            <div class="title">Mail</div>
+            <div class="po">PO Box: <span id="poBox">---</span></div>
+        </div>
+
+        <div id="menu">
+            <span onclick="openSend()">Send Letter</span>
+            <span onclick="openInbox()">Inbox <b id="mailCount">(0)</b></span>
+        </div>
+
+        <div id="content">
+
+            <div id="sendBox">
+                <input id="receiver" placeholder="Recipient">
+                <textarea id="message" placeholder="Write your telegram..."></textarea>
+                <button onclick="sendTelegram()">Send Telegram</button>
+            </div>
+
+            <div id="inboxBox"></div>
+
+        </div>
+
+        <div id="footer">
+        test
+        </div>
+
+        <button id="closeBtn" onclick="closeUI()">✖</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

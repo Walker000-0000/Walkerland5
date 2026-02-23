@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    margin: 0;
+    background: rgba(0,0,0,0.7);
+    font-family: 'Special Elite', monospace;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#paper {
+    width: 750px;
+    height: 500px;
+    background: #e8d9b7;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 100% 24px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 38px;
+}
+
+.po {
+    font-size: 16px;
+}
+
+#menu {
+    margin-top: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    padding-bottom: 5px;
+}
+
+#menu span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#menu span:hover {
+    text-decoration: underline;
+}
+
+#content {
+    margin-top: 15px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+input, textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    font-family: inherit;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+button {
+    padding: 8px 16px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.telegram {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgba(0,0,0,0.4);
+}
+
+.telegram b {
+    font-size: 18px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+}
